@@ -1,10 +1,10 @@
 {
-  "name": "@northscaler/enum-support",
+  "name": "@ballistagroup/enum-support",
   "version": "4.3.0-pre.1",
   "description": "Convenient enumeration pattern for JavaScript",
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/northscaler-public/enum-support.git"
+    "url": "https://github.com/ballistaGroup/enum-support"
   },
   "keywords": [
     "enumeration",
@@ -35,7 +35,8 @@
     "cov": "open coverage/index.html",
     "lint": "standard --verbose 'src/**/*.js'",
     "format": "standard --fix 'src/**/*.js'",
-    "make-distribution": "run-s transpile doc lic",
+    "make-distribution": "run-s transpile doc lic finalize-distribution",
+    "finalize-distribution": "copyfiles --verbose package.json package-lock.json README.md dist",
     "doc": "jsdoc --verbose -d docs -r -c jsdoc.json -R README.md src/main",
     "lic": "node lic.js > LICENSE"
   },
@@ -51,8 +52,8 @@
   },
   "dependencies": {
     "@babel/polyfill": "7.12.1",
-    "@northscaler/error-support": "3.4.1",
-    "@northscaler/string-support": "3.1.20"
+    "@ballistagroup/error-support": "3.5.0",
+    "@ballistagroup/string-support": "3.2.0"
   },
   "devDependencies": {
     "@babel/cli": "7.17.10",
