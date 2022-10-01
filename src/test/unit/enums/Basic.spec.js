@@ -2,9 +2,10 @@
 'use strict'
 
 import * as assert from 'assert'
-import { ClassNotExtendableError } from '@northscaler/error-support'
 import Enumeration from '../../../main'
 import EnumClassNotInstantiableError from '../../../main/errors/EnumClassNotInstantiableError'
+
+const { ClassNotExtendableError } = require('@ballistagroup/error-support')
 
 describe('Enumeration: simple', function () {
   const Color = Enumeration.new({ name: 'Color', values: ['RED', 'GREEN', 'BLUE'] })

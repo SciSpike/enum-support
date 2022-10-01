@@ -18,7 +18,7 @@ In this implementation, you ask the `Enumeration` class to create your enum, inc
 
 Here's a simple example.
 ```javascript
-const Enumeration = require('@northscaler/enum-support')
+const Enumeration = require('@ballista/enum-support')
 const Color = Enumeration.new({ name: 'Color', values: ['RED', 'GREEN', 'BLUE'] })
 ```
 
