@@ -43,6 +43,5 @@ jobs:
       - run: npm run make-distribution
       - run: npm prune --production
       - run: npm publish
-        working-directory: ./dist
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}

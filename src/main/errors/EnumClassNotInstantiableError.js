@@ -1,5 +1,5 @@
 'use strict'
 
-const { IllegalStateError } = require('@northscaler/error-support')
+const { IllegalStateError } = require('@ballistagroup/error-support')
 
 module.exports = IllegalStateError.subclass({ name: 'EnumClassNotInstantiableError' })

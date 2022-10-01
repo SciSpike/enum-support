@@ -4,13 +4,13 @@
 // dead project, and https://github.com/SciSpike/nodejs-support/blob/master/src/main/enums/Enumeration.js, which is
 // being deprecated in favor of this class.
 
-const { ClassNotExtendableError, IllegalArgumentTypeError } = require('@northscaler/error-support')
 const UnknownEnumValueError = require('../errors/UnknownEnumValueError')
 const EnumClassNotInstantiableError = require('../errors/EnumClassNotInstantiableError')
-const { toUpperSnake } = require('@northscaler/string-support')
+const { toUpperSnake } = require('@ballistagroup/string-support')
+const { ClassNotExtendableError, IllegalArgumentTypeError } = require('@ballistagroup/error-support')
 const copyProperties = require('./copyProperties')
 
-const symbol = 'Enumeration@northscaler/enum-support'
+const symbol = 'Enumeration@ballistagroup/enum-support'
 
 class Enumeration {
   static isEnumerationClass (it) {

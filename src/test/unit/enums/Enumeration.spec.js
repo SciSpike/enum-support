@@ -6,7 +6,7 @@ chai.use(require('dirty-chai'))
 const expect = chai.expect
 
 const Enumeration = require('../../../main')
-const { ClassNotExtendableError } = require('@northscaler/error-support')
+const { ClassNotExtendableError } = require('@ballistagroup/error-support')
 const EnumClassNotInstantiableError = require('../../../main').errors.EnumClassNotInstantiableError
 
 describe('unit tests of Enumeration', function () {
